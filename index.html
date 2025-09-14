@@ -8,16 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <!-- Add before script.js -->
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.2/dist/coco-ssd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0/dist/mobilenet.min.js"></script>
-<!-- then your app script -->
-<script src="script.js" defer></script>
-    <script src="script.js" defer></script>
-    
-</head>
+    </head>
 <body class="bg-gray-50">
     <!-- Header -->
     <header class="gradient-bg text-white">
@@ -27,7 +20,7 @@
                     <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
                         <span class="text-2xl">🐄</span>
                     </div>
-                    <h1 class="text-2xl font-bold">LiveStock AI</h1>
+                    <h1 class="text-2xl font-bold">Pashu Palak AI</h1>
                 </div>
                 <nav class="hidden md:flex space-x-6">
                     <a href="#" class="hover:text-blue-200">Home</a>
@@ -56,28 +49,24 @@
         <div class="container mx-auto px-6 text-center relative z-10">
             <!-- Animated livestock images -->
             <div class="absolute top-10 left-10 floating">
-                <img src="keys/hero-cattle-1?prompt=Holstein%20cow%20silhouette%20in%20white%20minimalist%20style" 
+                <img src="https://hatchcanvas.com/_/assets/ab_goeWZVrZqknZhFMYKVduV/keys//keys/hero-cattle-1?prompt=Holstein%20cow%20silhouette%20in%20white%20minimalist%20style" 
                      alt="Cattle" class="w-16 h-16 opacity-20 rounded-full">
             </div>
             <div class="absolute top-20 right-20 floating" style="animation-delay: 1s;">
-                <img src="keys/hero-buffalo-1?prompt=Water%20buffalo%20silhouette%20in%20white%20minimalist%20style" 
+                <img src="https://hatchcanvas.com/_/assets/ab_goeWZVrZqknZhFMYKVduV/keys//keys/hero-buffalo-1?prompt=Water%20buffalo%20silhouette%20in%20white%20minimalist%20style" 
                      alt="Buffalo" class="w-20 h-20 opacity-20 rounded-full">
             </div>
             <div class="absolute bottom-20 left-1/4 floating" style="animation-delay: 2s;">
-                <img src="keys/hero-cattle-2?prompt=Angus%20cattle%20silhouette%20in%20white%20minimalist%20style" 
+                <img src="https://hatchcanvas.com/_/assets/ab_goeWZVrZqknZhFMYKVduV/keys//keys/hero-cattle-2?prompt=Angus%20cattle%20silhouette%20in%20white%20minimalist%20style" 
                      alt="Cattle" class="w-12 h-12 opacity-20 rounded-full">
             </div>
             
             <div class="slide-in-left">
                 <h2 class="text-5xl font-bold mb-6">
-                    <span class="typewriter">AI-Powered Livestock Classification</span>
+                    <span class="typewriter">Pashu Palak AI </span>
                 </h2>
             </div>
             <div class="slide-in-right" style="animation-delay: 0.3s;">
-                <p class="text-xl mb-8 max-w-3xl mx-auto">
-                    Instantly identify and classify cattle and buffalo breeds using advanced computer vision technology. 
-                    Perfect for farmers, veterinarians, and livestock professionals.
-                </p>
             </div>
             <div class="slide-in-left" style="animation-delay: 0.6s;">
                 <button onclick="scrollToClassifier()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 pulse-glow floating">
@@ -103,61 +92,56 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="bg-white py-20 relative">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h3 class="text-3xl font-bold mb-4 text-gray-800 slide-in-left">Why Choose LiveStock AI?</h3>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="feature-card text-center p-8 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl shadow-lg">
-                    <div class="relative mb-6">
-                        <div class="text-6xl mb-4 floating">🎯</div>
-                        <img src="keys/feature-accuracy?prompt=High%20accuracy%20target%20icon%20with%20bull%20eye%20design%20in%20blue%20gradient" 
-                             alt="Accuracy" class="w-16 h-16 mx-auto opacity-20 absolute top-0 left-1/2 transform -translate-x-1/2">
-                    </div>
-                    <h4 class="text-xl font-semibold mb-3 text-gray-800">High Accuracy</h4>
-                    <p class="text-gray-600">Our AI model achieves 95%+ accuracy in distinguishing between cattle and buffalo breeds.</p>
-                    <div class="mt-4 flex justify-center">
-                        <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-                            ✓ 95%+ Accurate
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="feature-card text-center p-8 bg-gradient-to-br from-purple-50 to-pink-100 rounded-xl shadow-lg" style="animation-delay: 0.2s;">
-                    <div class="relative mb-6">
-                        <div class="text-6xl mb-4 floating" style="animation-delay: 0.5s;">⚡</div>
-                        <img src="keys/feature-speed?prompt=Lightning%20bolt%20speed%20icon%20in%20purple%20gradient%20style" 
-                             alt="Speed" class="w-16 h-16 mx-auto opacity-20 absolute top-0 left-1/2 transform -translate-x-1/2">
-                    </div>
-                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Instant Results</h4>
-                    <p class="text-gray-600">Get classification results in seconds, not minutes. Perfect for field use.</p>
-                    <div class="mt-4 flex justify-center">
-                        <div class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
-                            ⚡ < 2 Seconds
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="feature-card text-center p-8 bg-gradient-to-br from-green-50 to-teal-100 rounded-xl shadow-lg" style="animation-delay: 0.4s;">
-                    <div class="relative mb-6">
-                        <div class="text-6xl mb-4 floating" style="animation-delay: 1s;">📱</div>
-                        <img src="keys/feature-mobile?prompt=Mobile%20phone%20with%20camera%20icon%20in%20green%20gradient%20style" 
-                             alt="Mobile" class="w-16 h-16 mx-auto opacity-20 absolute top-0 left-1/2 transform -translate-x-1/2">
-                    </div>
-                    <h4 class="text-xl font-semibold mb-3 text-gray-800">Mobile Friendly</h4>
-                    <p class="text-gray-600">Works seamlessly on all devices. Take photos directly from your phone.</p>
-                    <div class="mt-4 flex justify-center">
-                        <div class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-semibold">
-                            📱 All Devices
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+   <!-- Features Section -->
+<section class="bg-white py-20 relative">
+  <div class="container mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h3 class="text-3xl font-bold mb-4 text-gray-800 slide-in-left">
+        Why Choose Pashu Palak AI ?
+      </h3>
+      <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-3 gap-8 text-center justify-items-center">
+      <!-- Feature 1 -->
+      <div class="feature-card text-center p-8 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl shadow-lg max-w-sm">
+        <div class="relative mb-6">
+          <div class="text-6xl mb-4 floating">🎯</div>
+          <img src="https://hatchcanvas.com/_/assets/ab_goeWZVrZqknZhFMYKVduV/keys//keys/feature-accuracy?prompt=High%20accuracy%20target%20icon%20with%20bull%20eye%20design%20in%20blue%20gradient"
+               alt="Accuracy" 
+               class="w-16 h-16 mx-auto opacity-20 absolute top-0 left-1/2 transform -translate-x-1/2">
+        </div>
+        <h4 class="text-xl font-semibold mb-3 text-gray-800">High Accuracy</h4>
+        <p class="text-gray-600">Our AI model achieves 95%+ accuracy in distinguishing between cattle and buffalo breeds.</p>
+        <div class="mt-4 flex justify-center">
+          <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+            ✓ 95%+ Accurate
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card text-center p-8 bg-gradient-to-br from-purple-50 to-pink-100 rounded-xl shadow-lg max-w-sm">
+        <div class="relative mb-6">
+          <div class="text-6xl mb-4 floating" style="animation-delay: 0.5s;">⚡</div>
+          <img src="https://hatchcanvas.com/_/assets/ab_goeWZVrZqknZhFMYKVduV/keys//keys/feature-speed?prompt=Lightning%20bolt%20speed%20icon%20in%20purple%20gradient%20style"
+               alt="Speed" 
+               class="w-16 h-16 mx-auto opacity-20 absolute top-0 left-1/2 transform -translate-x-1/2">
+        </div>
+        <h4 class="text-xl font-semibold mb-3 text-gray-800">Instant Results</h4>
+        <p class="text-gray-600">Get classification results in seconds, not minutes. Perfect for field use.</p>
+        <div class="mt-4 flex justify-center">
+          <div class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+            ⚡ &lt; 2 Seconds
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
             <!-- Additional animated features -->
             <div class="mt-16 grid md:grid-cols-2 gap-8">
                 <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-2xl shadow-2xl slide-in-left">
@@ -343,45 +327,36 @@
                 </div>
 
                 <!-- Results Section -->
-<div id="results" class="mt-8 hidden">
-    <div class="result-card bg-white rounded-2xl shadow-lg p-8">
-        <h4 class="text-2xl font-bold text-center mb-6 text-gray-800">Classification Results</h4>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div>
-                <h5 class="text-lg font-semibold mb-4 text-gray-700">Classification Details</h5>
-                <div class="space-y-3">
-                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                        <span class="font-medium">Type:</span>
-                        <span id="resultType" class="text-blue-600 font-semibold">-</span>
-                    </div>
-                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                        <span class="font-medium">Health Score: </span>
-                        <span id="resultConfidence" class="text-green-600 font-semibold">-</span>
-                    </div>
-                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                        <span class="font-medium">Breed:</span>
-                        <span id="resultBreed" class="text-purple-600 font-semibold">-</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h5 class="text-lg font-semibold mb-4 text-gray-700">Breed Information</h5>
-                <div class="p-4 bg-gray-50 rounded-lg">
-                    <p id="breedInfo" class="text-gray-600">Detailed breed information will appear here...</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="mt-6 text-center">
-            <button onclick="resetClassifier()" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition duration-300">
-                🔄 Try Another Image
-            </button>
-        </div>
-    </div>
-</div>
-
+                <div id="results" class="mt-8 hidden">
+                    <div class="result-card bg-white rounded-2xl shadow-lg p-8">
+                        <h4 class="text-2xl font-bold text-center mb-6 text-gray-800">Classification Results</h4>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-lg font-semibold mb-4 text-gray-700">Classification Details</h5>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="font-medium">Type:</span>
+                                        <span id="resultType" class="text-blue-600 font-semibold">-</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="font-medium">Health Condition:</span>
+                                        <span id="resultConfidence" class="text-green-600 font-semibold">-</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                        <span class="font-medium">Breed:</span>
+                                        <span id="resultBreed" class="text-purple-600 font-semibold">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h5 class="text-lg font-semibold mb-4 text-gray-700">Breed Information</h5>
+                                <div class="p-4 bg-gray-50 rounded-lg">
+                                    <p id="breedInfo" class="text-gray-600">Detailed breed information will appear here...</p>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="mt-6 text-center">
                             <button onclick="resetClassifier()" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition duration-300">
@@ -393,8 +368,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="text-center">
@@ -402,21 +376,18 @@
                     <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                         <span class="text-lg">🐄</span>
                     </div>
-                    <h3 class="text-xl font-bold">LiveStock AI</h3>
+                    <h3 class="text-xl font-bold">Pashu Palak AI</h3>
                 </div>
-                <p class="text-gray-400 mb-6">Advanced AI-powered livestock classification for modern agriculture</p>
+                <p class="text-gray-400 mb-6">Advanced Pashu Palak AI for modern agriculture</p>
                 <div class="flex justify-center space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
                     <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                     <a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a>
                 </div>
                 <div class="mt-6 pt-6 border-t border-gray-700">
-                    <p class="text-gray-500">&copy; 2024 LiveStock AI. All rights reserved.</p>
+                    <p class="text-gray-500">&copy; 2024 Pashu Palak AI. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    
-</body>
-</html>
+    <script src="script.js"></script>

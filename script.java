@@ -570,4 +570,3 @@
                 detectionBox.classList.add('hidden');
             }, 2000);
         }
-    

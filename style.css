@@ -1,5 +1,4 @@
-
-        body { 
+body { 
             font-family: 'Inter', sans-serif; 
             overflow-x: hidden;
             background: #0a0a0a;
@@ -416,4 +415,3 @@
             color: #00ff41;
             text-shadow: 0 0 10px #00ff41;
         }
-    
